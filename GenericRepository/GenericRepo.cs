@@ -1,35 +1,37 @@
+using Entity;
+
 namespace GenericRepository
 {
     /// <summary>
     /// A class to maintain generic data repository
     /// </summary>
     /// <typeparam name="T"></typeparam>
-    class GenericRepo<T>
+    public class GenericRepo<T>
     {
         public List<T> GetAll()
         {
             return new List<T>();
         }
 
-        public T Get(int id)
+        public T Get(int entity_id)
         {
             return default(T);
         }
 
         public void Add(T entity)
         {
-            System.Console.WriteLine($"{entity} is added"); 
+            System.Console.WriteLine($"{typeof(T)} entity added");
         }
 
         public void Update(T entity)
         {
-            System.Console.WriteLine($"{entity} is updated");
+            System.Console.WriteLine($"{typeof(T)} entity updated");
         }
 
-        public void Delete(int id)
+        public void Delete(int entity_id)
         {
-            System.Console.WriteLine($"{id} is deleted");
+            System.Console.WriteLine($"{typeof(T)} entity deleted");
         }
-    
+
     }
 }
