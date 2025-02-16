@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace deleates_evets
+namespace Deleates
 {
     // Step 1: Define a delegate
     delegate void DisplayMessage(string message);
