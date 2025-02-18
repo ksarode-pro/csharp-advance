@@ -21,6 +21,10 @@
             //extension method for Employee (custom type)
             Employee emp = new Employee { Name = "John", Salary = 60000 };
             Console.WriteLine(emp.IsGreaterThan50K());
+
+            string description = "This is a test description";
+            System.Console.WriteLine(description.CountWords());
+            System.Console.WriteLine(description.CountChars());
         }
     }
 }
