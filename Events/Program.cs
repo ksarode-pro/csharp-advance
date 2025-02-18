@@ -32,14 +32,12 @@ namespace Events
         static void Main()
         {
             Process process = new Process();
-
             // Step 4: Subscribe to the event
             process.ProcessCompleted += OnProcessCompleted;
-
             // Start the process
             process.StartProcess();
 
-
+            #region Stock Price Change Event
             // Stock price change event sample application
             //Google stock creation
             Stock google = new Stock("Google", 1000);
@@ -54,6 +52,7 @@ namespace Events
 
             //Changing the stock price
             google.ChangePrice(1100);
+            #endregion
         }
     }
 }
