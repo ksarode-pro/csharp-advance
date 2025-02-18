@@ -12,6 +12,7 @@ namespace Events
     // Delegate for the stock's price change event
     public delegate void priceChangeEventHandler(object sender, StockPriceChangedEventArgs e);
 
+    // Stock class that raises the price change event - Publisher
     class Stock
     {
         internal int Price { get; set; }
@@ -34,7 +35,7 @@ namespace Events
         }
     }
 
-    // Investor class subscribes to stock price changes
+    // Investor class subscribes to stock price changes - subscriber
     class Investor
     {
         public string Name { get; }
