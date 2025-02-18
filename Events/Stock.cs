@@ -10,14 +10,15 @@ namespace Events
     }
 
     // Delegate for the stock's price change event
-    public delegate void priceChangeEventHandler(object sender, StockPriceChangedEventArgs e);
+    //public delegate void priceChangeEventHandler(object sender, StockPriceChangedEventArgs e);
 
     // Stock class that raises the price change event - Publisher
     class Stock
     {
         internal int Price { get; set; }
         internal string Name { get; set; }
-        public event priceChangeEventHandler OnPriceChanged;
+        //public event priceChangeEventHandler OnPriceChanged;
+        public event EventHandler<StockPriceChangedEventArgs> OnPriceChanged;
 
         public Stock(string name, int price)
         {
