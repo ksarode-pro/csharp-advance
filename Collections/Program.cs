@@ -26,5 +26,8 @@ class Program
 
         ConcurrentBagDemo cb = new ConcurrentBagDemo();
         cb.Demo();
+
+        ConcurrentDictionaryDemo cd = new ConcurrentDictionaryDemo();
+        cd.Demo();
     }
 }
