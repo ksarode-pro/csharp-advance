@@ -23,5 +23,8 @@ class Program
 
         GenericSortedListDemo gst = new GenericSortedListDemo();
         gst.Demo();
+
+        ConcurrentBagDemo cb = new ConcurrentBagDemo();
+        cb.Demo();
     }
 }
