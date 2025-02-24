@@ -29,5 +29,8 @@ class Program
 
         ConcurrentDictionaryDemo cd = new ConcurrentDictionaryDemo();
         cd.Demo();
+
+        HashSetDemo hs = new HashSetDemo();
+        hs.Demo();
     }
 }
