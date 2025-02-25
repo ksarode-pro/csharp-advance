@@ -17,6 +17,9 @@ employee2.PrintFullName();
 //virtual-override Output: Base Class PrintFullName Method
 // new Output: Base Class PrintFullName Method
 
-//In case of new keyword (method hiding), the method to be called is determined by the reference type and not by the object type.
-//In case of virtual-override, the method to be called is determined by the object type and not by the reference type.
+//In case of new keyword (method hiding), the method to be called 
+// is determined by the reference type and not by the object type.
+//
+// In case of virtual-override, the method to be called 
+// is determined by the object type and not by the reference type.
 
