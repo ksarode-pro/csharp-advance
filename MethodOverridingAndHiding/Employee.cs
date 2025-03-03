@@ -1,6 +1,6 @@
 namespace MethosOverridingAndHiding
 {
-    class Employee
+    class BaseClass
     {
         public virtual void PrintFullName()
         {
@@ -8,10 +8,10 @@ namespace MethosOverridingAndHiding
         }
     }
 
-    class FullTimeEmployee : Employee
+    class DerivedClass : BaseClass
     {
-        public override void PrintFullName()
-        //public new void PrintFullName()
+        //public override void PrintFullName()
+        public new void PrintFullName()
         {
             System.Console.WriteLine("Derived Class PrintFullName Method");
         }

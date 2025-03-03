@@ -1,19 +1,19 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using MethosOverridingAndHiding;
 
-FullTimeEmployee fullTimeEmployee = new FullTimeEmployee();
-fullTimeEmployee.PrintFullName();
+DerivedClass o = new DerivedClass();
+o.PrintFullName();
 // virtual-override  Output: Derived Class PrintFullName Method
 // new Output: Derived Class PrintFullName Method
 
 
-Employee employee = new FullTimeEmployee();
-employee.PrintFullName();
+BaseClass o2 = new DerivedClass();
+o2.PrintFullName();
 //virtual-override Output: Derived Class PrintFullName Method
 // new Output: Base Class PrintFullName Method
 
-Employee employee2 = new Employee();
-employee2.PrintFullName();
+BaseClass o3 = new BaseClass();
+o3.PrintFullName();
 //virtual-override Output: Base Class PrintFullName Method
 // new Output: Base Class PrintFullName Method
 
