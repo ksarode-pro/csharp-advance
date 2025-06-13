@@ -12,7 +12,9 @@
 
             //extension method for IEnumerable
             List<int> numbers = new List<int> { 1, 2, 3, 4 };
+            int[] demoArray = new int[] { 1, 1, 1, 1 };
             Console.WriteLine(numbers.SumOfElements());
+            Console.WriteLine(demoArray.SumOfElements());
 
             //chainnig of extension methods
             string text = "hello world";
@@ -25,6 +27,11 @@
             string description = "This is a test description";
             System.Console.WriteLine(description.CountWords());
             System.Console.WriteLine(description.CountChars());
+
+            //extension method for double
+            double fahrenheit = 98.6;
+            Console.WriteLine($"Fahrenheit: {fahrenheit}, Celsius: {fahrenheit.ToCelsius()}");
+            Console.WriteLine($"Celsius: {fahrenheit.ToCelsius()}, Fahrenheit: {fahrenheit.ToCelsius().ToFahrenheit()}");
         }
     }
 }
