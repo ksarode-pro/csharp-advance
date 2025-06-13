@@ -1,0 +1,4 @@
+1. Extension method adds new methods to existing type(value and reference) without deriving the type.  
+2. It is a static method
+3. Must be defined in static class
+4. "this" modifier is applied to the first parameter. The type of the first parameter will be the type that is extended.

@@ -4,6 +4,7 @@ public class Employee
     public int Salary { get; set; }
 }
 
+//Example of extention method on custom reference type
 public static class EmployeeExtensions
 {
     public static bool IsGreaterThan50K(this Employee emp, int threshold = 50000)
