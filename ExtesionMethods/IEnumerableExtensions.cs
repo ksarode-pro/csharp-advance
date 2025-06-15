@@ -6,4 +6,10 @@ public static class IEnumerableExtensions
     {
         return numbers.Sum();
     }
+
+    public static IEnumerable<int> reverseArray(this IEnumerable<int> array)
+    {
+        return array.Reverse();
+    }
+
 }
