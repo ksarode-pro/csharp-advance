@@ -39,6 +39,20 @@
             {
                 System.Console.WriteLine(x);
             }
+
+            //Extention method on IEnumerable custom objects
+            Employee[] employees =
+            [
+                new Employee {
+                    Name = "Kiran",
+                    Salary = 100000
+                },
+                new Employee {
+                    Name = "Pradnya",
+                    Salary = 200000
+                }
+            ];
+            System.Console.WriteLine(employees.SumOfSalary());
         }
     }
 }

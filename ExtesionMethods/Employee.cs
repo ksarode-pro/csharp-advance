@@ -11,4 +11,11 @@ public static class EmployeeExtensions
     {
         return emp.Salary > threshold;
     }
+
+    public static double SumOfSalary(this IEnumerable<Employee> employees)
+    {
+        double TotalSum = 0;
+        employees.Sum(e => TotalSum += e.Salary);
+        return TotalSum;
+    }
 }
