@@ -32,6 +32,27 @@
             double fahrenheit = 98.6;
             Console.WriteLine($"Fahrenheit: {fahrenheit}, Celsius: {fahrenheit.ToCelsius()}");
             Console.WriteLine($"Celsius: {fahrenheit.ToCelsius()}, Fahrenheit: {fahrenheit.ToCelsius().ToFahrenheit()}");
+
+            //Extention method on IEnumerable<int>
+            int[] array = [1, 2, 3, 4, 5];
+            foreach (int x in array.reverseArray())
+            {
+                System.Console.WriteLine(x);
+            }
+
+            //Extention method on IEnumerable custom objects
+            Employee[] employees =
+            [
+                new Employee {
+                    Name = "Kiran",
+                    Salary = 100000
+                },
+                new Employee {
+                    Name = "Pradnya",
+                    Salary = 200000
+                }
+            ];
+            System.Console.WriteLine(employees.SumOfSalary());
         }
     }
 }
