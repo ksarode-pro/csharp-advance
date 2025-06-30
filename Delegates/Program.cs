@@ -81,6 +81,10 @@ namespace Deleates
             eventHandler(null, EventArgs.Empty);
             #endregion
 
+            #region Practice
+            DelegateDemo dd = new DelegateDemo();
+            dd.Demo();
+            #endregion
         }
     }
 }
