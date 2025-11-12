@@ -1,8 +1,10 @@
-Microsoft Visual Studio Solution File, Format Version 12.00
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.2.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generics", "Generics\Generics.csproj", "{C16099E9-FDEE-9687-6953-03259CE8B899}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Multithreading", "Multithreading\Multithreading.csproj", "{53CAF2E4-E3FF-41AD-85FF-4DA675623C6D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -14,6 +16,10 @@ Global
 		{C16099E9-FDEE-9687-6953-03259CE8B899}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C16099E9-FDEE-9687-6953-03259CE8B899}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C16099E9-FDEE-9687-6953-03259CE8B899}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53CAF2E4-E3FF-41AD-85FF-4DA675623C6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53CAF2E4-E3FF-41AD-85FF-4DA675623C6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53CAF2E4-E3FF-41AD-85FF-4DA675623C6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53CAF2E4-E3FF-41AD-85FF-4DA675623C6D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
