@@ -1,3 +1,29 @@
+/*
+
+Concurrent collections — deeper dive
+------------------------------------
+What they are (quick)?
+- Concurrent collections live in System.Collections.
+Concurrent and provide thread-safe, ready-to-use data structures 
+(e.g., ConcurrentDictionary, ConcurrentQueue, ConcurrentStack, 
+ConcurrentBag, BlockingCollection). 
+
+Use them when multiple threads need to read/write the same collection 
+without you writing lock logic.
+
+
+How they achieve thread-safety (internals summary)?
+- Some collections (like ConcurrentQueue and ConcurrentStack) 
+avoid locks and use atomic primitives (Interlocked/CAS) for operations — 
+this gives low-latency, lock-free behavior for common ops. 
+
+- ConcurrentDictionary uses fine-grained locking/striping internally to allow high concurrency without locking the entire table.
+
+- ConcurrentBag uses thread-local storage to make per-thread operations very fast; items are occasionally migrated between threads when necessary.
+
+*/
+
+
 using System.Collections.Concurrent;
 
 namespace Collections

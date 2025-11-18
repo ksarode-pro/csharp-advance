@@ -1,3 +1,32 @@
+/*
+
+Hashtable
+
+Key/value pair collection
+Keys must be unique
+Non-generic
+No type safety
+
+Queue
+
+FIFO (First In First Out)
+
+Queue queue = new Queue();
+queue.Enqueue("A");
+queue.Dequeue();
+
+
+Stack
+
+LIFO (Last In First Out)
+
+Stack stack = new Stack();
+stack.Push("A");
+stack.Pop();
+
+*/
+
+
 using System.Collections;
 
 namespace Collections

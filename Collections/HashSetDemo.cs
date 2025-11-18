@@ -1,3 +1,16 @@
+/*
+
+HashSet<T>
+
+Unordered collection of UNIQUE ELEMENTS
+No duplicates allowed
+No Sorting
+
+Internal Working:
+Uses Dictionary<T, byte> internally
+
+*/
+
 using System.Collections;
 
 namespace Collections

@@ -1,3 +1,21 @@
+/*
+
+ArrayList
+=========
+List-Based Colection
+
+Pros:
+Stores any data type as object
+Dynamically resizable array
+
+Cons:
+Boxing/unboxing overhead for value types
+No type safety
+
+Internal Working:
+Internally uses an array and resizes it (typically doubles the size) when capacity exceeds.
+*/
+
 using System.Collections;
 namespace Collections
 {

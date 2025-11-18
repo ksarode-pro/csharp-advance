@@ -1,3 +1,17 @@
+/*
+
+Dictionary<TKey, TValue>
+
+Key-value pair storage
+Fast lookups via hashing
+Unique keys only
+
+Internal Working:
+Uses hash table logic. Keys are hashed to determine index bucket
+
+*/
+
+
 using System.Collections;
 
 namespace Collections
