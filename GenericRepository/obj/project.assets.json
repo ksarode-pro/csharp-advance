@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/kiransarode/Projects/csharp_advance/GenericRepository/GenericRepository.csproj",
+      "projectUniqueName": "/Users/kiransarode/Projects/csharp-advance/GenericRepository/GenericRepository.csproj",
       "projectName": "GenericRepository",
-      "projectPath": "/Users/kiransarode/Projects/csharp_advance/GenericRepository/GenericRepository.csproj",
+      "projectPath": "/Users/kiransarode/Projects/csharp-advance/GenericRepository/GenericRepository.csproj",
       "packagesPath": "/Users/kiransarode/.nuget/packages/",
-      "outputPath": "/Users/kiransarode/Projects/csharp_advance/GenericRepository/obj/",
+      "outputPath": "/Users/kiransarode/Projects/csharp-advance/GenericRepository/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/kiransarode/.nuget/NuGet/NuGet.Config"
