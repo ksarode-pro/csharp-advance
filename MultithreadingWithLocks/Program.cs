@@ -21,7 +21,7 @@ namespace MultithreadingWithLocks
 
         private static void IncreamentCounter()
         {
-            lock(lockObj)
+            lock (lockObj)
             {
                 for (int i = 0; i < 100000; i++)
                 {
@@ -31,3 +31,4 @@ namespace MultithreadingWithLocks
         }
     }
 }
+
