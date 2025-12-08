@@ -1,11 +1,15 @@
 ﻿using System;
 using System.Collections.Concurrent;
+using System.Linq;
 using System.Runtime.ExceptionServices;
 
 namespace Deleates
 {
     // Step 1: Define a delegate
     delegate void DisplayMessage(string message);
+
+    // New delegate type for lambda expression
+    delegate void LambdaMessageHandler(string message);
 
     class Program
     {
@@ -54,7 +58,7 @@ namespace Deleates
 
             // Step 7: Using lambda expression
             System.Console.WriteLine("Using Lambda Expression with delegate");
-            DisplayMessage lambdaDel = message => Console.WriteLine("Lambda Message: " + message);
+            LambdaMessageHandler lambdaDel = message => Console.WriteLine("Lambda Message: " + message);
             lambdaDel("Hello, Lambda!");
             #endregion
 
@@ -74,6 +78,11 @@ namespace Deleates
             System.Console.WriteLine("Using Predicate delegate");
             Predicate<string> isUpper = str => str.Equals(str.ToUpper());
             Console.WriteLine("IsUpper: " + isUpper("KIRAN"));
+
+            // Step 10.a: Using Predicate delegate with lambda expression
+            System.Console.WriteLine("Using Predicate delegate with lambda expression");
+            Predicate<string> isPalindrome = str => str.Equals(new string(str.Reverse().ToArray()));
+            Console.WriteLine("isPalindrome: " + isPalindrome("NITIN"));
 
             // Step 11: Using EventHandler delegate
             System.Console.WriteLine("Using EventHandler delegate");

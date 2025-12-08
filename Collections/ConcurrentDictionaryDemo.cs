@@ -33,13 +33,17 @@ namespace Collections
         public void Demo()
         {
             System.Console.WriteLine("Concurrent collections\n------------ConcurrentDictionary<T,V>------------");
+            //sorts elements by key
             ConcurrentDictionary<int, string> cb = new ConcurrentDictionary<int, string>();
 
-            cb.AddOrUpdate(1, "One", (key, oldValue) => "One");
-            cb.AddOrUpdate(2, "2", (key, oldValue) => "2");
+            cb.AddOrUpdate(11, "One", (key, oldValue) => "One");
+            cb.AddOrUpdate(12, "2", (key, oldValue) => "2");
             cb.AddOrUpdate(3, "30", (key, oldValue) => "30");
-            //duplicate addion
-            cb.AddOrUpdate(3, "40", (key, oldValue) => "40");
+            //duplicate key addion NOT allowed, replace the old value
+            cb.AddOrUpdate(13, "40", (key, oldValue) => "40");
+            cb.TryAdd(0, "40");
+            //duplicate key addion NOT allowed, skips key insertion
+            cb.TryAdd(11, "out string value");
 
             System.Console.WriteLine("Count: " + cb.Count);
             System.Console.WriteLine("List elements:");

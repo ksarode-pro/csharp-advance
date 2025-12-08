@@ -24,6 +24,7 @@ class Program
         // GenericSortedListDemo gst = new GenericSortedListDemo();
         // gst.Demo();
 
+        /*
         ConcurrentBagDemo cb = new ConcurrentBagDemo();
         cb.Demo();
 
@@ -32,6 +33,7 @@ class Program
 
         BlockingCollectionDemo bc = new BlockingCollectionDemo();
         bc.Demo();
+        */
 
         // HashSetDemo hs = new HashSetDemo();
         // hs.Demo();
