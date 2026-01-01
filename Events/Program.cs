@@ -31,27 +31,34 @@ namespace Events
 
         static void Main()
         {
-            Process process = new Process();
-            // Step 4: Subscribe to the event
-            process.ProcessCompleted += OnProcessCompleted;
-            // Start the process
-            process.StartProcess();
+            // Process process = new Process();
+            // // Step 4: Subscribe to the event
+            // process.ProcessCompleted += OnProcessCompleted;
+            // // Start the process
+            // process.StartProcess();
 
-            #region Stock Price Change Event
-            // Stock price change event sample application
-            //Google stock creation
-            Stock google = new Stock("Google", 1000);
+            // #region Stock Price Change Event
+            // // Stock price change event sample application
+            // //Google stock creation
+            // Stock google = new Stock("Google", 1000);
 
-            //Investors creation
-            Investor investor1 = new Investor("Investor 1");
-            Investor investor2 = new Investor("Investor 2");
+            // //Investors creation
+            // Investor investor1 = new Investor("Investor 1");
+            // Investor investor2 = new Investor("Investor 2");
 
-            //Subscribing to the OnStockPriceChange event
-            google.OnPriceChanged += investor1.OnStockPriceChanged;
-            google.OnPriceChanged += investor2.OnStockPriceChanged;
+            // //Subscribing to the OnStockPriceChange event
+            // google.OnPriceChanged += investor1.OnStockPriceChanged;
+            // google.OnPriceChanged += investor2.OnStockPriceChanged;
 
-            //Changing the stock price
-            google.ChangePrice(1100);
+            // //Changing the stock price
+            // google.ChangePrice(1100);
+            // #endregion
+
+            #region Event with Custom EventArgs
+            Publisher publisher = new Publisher();
+            Subscriber subscriber = new Subscriber();
+            subscriber.Subscribe(publisher);
+            publisher.PublisherTask();
             #endregion
         }
     }

@@ -2,6 +2,7 @@
 using System.Collections.Concurrent;
 using System.Linq;
 using System.Runtime.ExceptionServices;
+using Delegates;
 
 namespace Deleates
 {
@@ -93,6 +94,9 @@ namespace Deleates
             #region Practice
             DelegateDemo dd = new DelegateDemo();
             dd.Demo();
+
+            DelegatePractice dp = new DelegatePractice();
+            dp.DelDemo();
             #endregion
         }
     }
