@@ -1,42 +1,78 @@
 namespace Events
 {
-    class PublisherMessage : EventArgs
+    public class PublisherMessage : EventArgs
     {
         public string? PublisherName { get; set; }
     }
 
-    public delegate void Notification<PublisherMessage>(object sender, PublisherMessage args);
-
-    class Publisher
+    public class Publisher
     {
-        public event Notification<PublisherMessage>? OnNotify;
-
+        public event EventHandler<PublisherMessage>? OnNotify;
         public void PublisherTask()
         {
-            System.Console.WriteLine("Publisher started working..");
+            System.Console.WriteLine("Publisher working...");
             Thread.Sleep(3000);
-            System.Console.WriteLine("Publisher work finished, sending notification...");
             if (OnNotify != null)
             {
-                OnNotify.Invoke(this, new PublisherMessage { PublisherName = "John" });
+                OnNotify.Invoke(this, new PublisherMessage { PublisherName = "Pradnya" });
             }
             else
             {
-                System.Console.WriteLine("No subscribers to notify.");
+                System.Console.WriteLine("No subscibers found");
             }
         }
     }
 
-    class Subscriber
+    public class Subscriber
     {
-        public void Subscribe(Publisher publisher)
+        public void Subscribe(Publisher p)
         {
-            publisher.OnNotify += OnPublisherNotify;
+            p.OnNotify += WorkNow;
         }
 
-        public void OnPublisherNotify(object sender, PublisherMessage args)
+        private void WorkNow(object? sender, PublisherMessage e)
         {
-            System.Console.WriteLine($"Notification received from {args.PublisherName}");
+            System.Console.WriteLine($"Messege from {e.PublisherName} received!");
         }
     }
+
+
+
+
+
+
+    // public delegate void Notification<PublisherMessage>(object sender, PublisherMessage args);
+
+    // class Publisher
+    // {
+    //     public event Notification<PublisherMessage>? OnNotify;
+
+    //     public void PublisherTask()
+    //     {
+    //         System.Console.WriteLine("Publisher started working..");
+    //         Thread.Sleep(3000);
+    //         System.Console.WriteLine("Publisher work finished, sending notification...");
+    //         if (OnNotify != null)
+    //         {
+    //             OnNotify.Invoke(this, new PublisherMessage { PublisherName = "John" });
+    //         }
+    //         else
+    //         {
+    //             System.Console.WriteLine("No subscribers to notify.");
+    //         }
+    //     }
+    // }
+
+    // class Subscriber
+    // {
+    //     public void Subscribe(Publisher publisher)
+    //     {
+    //         publisher.OnNotify += OnPublisherNotify;
+    //     }
+
+    //     public void OnPublisherNotify(object sender, PublisherMessage args)
+    //     {
+    //         System.Console.WriteLine($"Notification received from {args.PublisherName}");
+    //     }
+    // }
 }
