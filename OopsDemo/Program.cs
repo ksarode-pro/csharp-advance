@@ -1,4 +1,6 @@
-﻿using System;
+// access modifiers, default access modifiers, impact of modifers on inherihance
+
+using System;
 using System.Runtime.CompilerServices;
 using System.Reflection;
 using OopsDemo;
@@ -6,7 +8,7 @@ using OopsDemo2;
 
 
 /*
-List of Access Modifiers:
+List of Access Modifiers in C# and scope:
 | Modifier               | Scope / Visibility Description                                           | Accessible From                                               |
 | ---------------------- | ------------------------------------------------------------------------ | ------------------------------------------------------------- |
 | **public**             | No restriction                                                           | Any class in any assembly                                     |
