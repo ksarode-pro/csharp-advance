@@ -1,4 +1,4 @@
-﻿// Modern approach using Async programming and ThreadPool managed .NET
+// Old approach by directly managing Thread
 using System;
 using System.Threading;
 
@@ -8,6 +8,7 @@ namespace Multithreading
     {
         public static void Main(string[] args)
         {
+            // Worker thread creation using Thread class and anonymous method defines taks to be performed by thread.
             Thread t = new Thread(() => {
                 for (int i = 1; i <= 10; i++)
                 {
@@ -16,6 +17,7 @@ namespace Multithreading
                 }
             });
 
+            // thread actually starts working on actual tasks assigned to it
             t.Start();
 
             for(int i = 1; i <= 3; i++)
@@ -24,6 +26,7 @@ namespace Multithreading
                 Thread.Sleep(100);
             }
 
+            // Worker thread meets Main thread after taks is finished
             t.Join();
 
             Console.ReadKey();    
@@ -33,7 +36,7 @@ namespace Multithreading
 
 
 /*
-// Old approach by directly managing Thread
+// Modern approach using Async programming and ThreadPool managed .NET
 using System;
 using System.Threading;
 
