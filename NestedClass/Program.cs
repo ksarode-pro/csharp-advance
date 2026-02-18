@@ -1,4 +1,6 @@
-﻿using System;
+// inner class declaration and usage demonstrating program
+
+using System;
 
 namespace NestedClassDemo
 {
