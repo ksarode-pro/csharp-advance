@@ -80,6 +80,8 @@ namespace OopsDemo
         {
             Console.WriteLine($"Derived: {baseVariable} - {baseProtectedVariable} - {basePrivateProtectedVariable} - {baseProtectedInternalVariable}");
         }
+
+        // this method shows inpact of access modifiers in derived class
         public override void ShowAccessModifier()
         {
             Type type = typeof(Derived2);
