@@ -1,4 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
+// See https://aka.ms/new-console-template for more information
 using System.Collections;
 namespace Collections;
 
@@ -6,6 +6,7 @@ class Program
 {
     static void Main(string[] args)
     {
+        //uncomment one bh one to teat each collection
         // ArrayListDemo al = new ArrayListDemo();
         // al.Demo();
 
