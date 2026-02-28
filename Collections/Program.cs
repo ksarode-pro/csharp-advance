@@ -7,8 +7,8 @@ class Program
     static void Main(string[] args)
     {
         //uncomment one bh one to teat each collection
-        // ArrayListDemo al = new ArrayListDemo();
-        // al.Demo();
+        ArrayListDemo al = new ArrayListDemo();
+        al.Demo();
 
         // HashtableDemo ht = new HashtableDemo();
         // ht.Demo();
