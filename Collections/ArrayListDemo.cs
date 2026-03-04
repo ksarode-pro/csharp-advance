@@ -29,7 +29,7 @@ namespace Collections
             System.Console.WriteLine("Capacity: " + list.Capacity);
             list.Add(1);
             list.Add(2);
-            //duplicate addion
+            //duplicate addion - allows
             list.Add(2);
             list.Add("Three");
             list.Add(new { Name = "Kiran", Age = 30 });
