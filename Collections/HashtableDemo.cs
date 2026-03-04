@@ -41,7 +41,7 @@ namespace Collections
             ht.Add(1, "One");
             ht.Add("2", 2);
             ht.Add(3, new { Name = "Kiran", Age = 30 });
-            //duplicate addion
+            //duplicate key addion
             //ht.Add(3, new { Name = "Kiran", Age = 30 });
             //Unhandled exception. System.ArgumentException: Item has already been added. Key in dictionary: '3'  Key being added: '3'
 
