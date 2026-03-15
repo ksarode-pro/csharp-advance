@@ -8,19 +8,19 @@
     "net8.0": []
   },
   "packageFolders": {
-    "/Users/kiransarode/.nuget/packages/": {}
+    "/Users/ksarode/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/kiransarode/Projects/csharp-advance/GenericRepository/GenericRepository.csproj",
+      "projectUniqueName": "/Users/ksarode/Projects/csharp-advance/GenericRepository/GenericRepository.csproj",
       "projectName": "GenericRepository",
-      "projectPath": "/Users/kiransarode/Projects/csharp-advance/GenericRepository/GenericRepository.csproj",
-      "packagesPath": "/Users/kiransarode/.nuget/packages/",
-      "outputPath": "/Users/kiransarode/Projects/csharp-advance/GenericRepository/obj/",
+      "projectPath": "/Users/ksarode/Projects/csharp-advance/GenericRepository/GenericRepository.csproj",
+      "packagesPath": "/Users/ksarode/.nuget/packages/",
+      "outputPath": "/Users/ksarode/Projects/csharp-advance/GenericRepository/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/kiransarode/.nuget/NuGet/NuGet.Config"
+        "/Users/ksarode/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -64,7 +64,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.404/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.413/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
