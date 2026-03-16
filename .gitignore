@@ -37,3 +37,6 @@ StaticInAbstractClass/obj
 
 Static/bin/
 Static/obj/
+
+Singleton/bin
+Singleton/obj

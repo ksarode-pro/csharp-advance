@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/ksarode/Projects/csharp-advance/StaticInAbstractClass/StaticInAbstractClass.csproj": {}
+    "/Users/kiransarode/Projects/csharp-advance/StaticInAbstractClass/StaticInAbstractClass.csproj": {}
   },
   "projects": {
-    "/Users/ksarode/Projects/csharp-advance/StaticInAbstractClass/StaticInAbstractClass.csproj": {
+    "/Users/kiransarode/Projects/csharp-advance/StaticInAbstractClass/StaticInAbstractClass.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ksarode/Projects/csharp-advance/StaticInAbstractClass/StaticInAbstractClass.csproj",
+        "projectUniqueName": "/Users/kiransarode/Projects/csharp-advance/StaticInAbstractClass/StaticInAbstractClass.csproj",
         "projectName": "StaticInAbstractClass",
-        "projectPath": "/Users/ksarode/Projects/csharp-advance/StaticInAbstractClass/StaticInAbstractClass.csproj",
-        "packagesPath": "/Users/ksarode/.nuget/packages/",
-        "outputPath": "/Users/ksarode/Projects/csharp-advance/StaticInAbstractClass/obj/",
+        "projectPath": "/Users/kiransarode/Projects/csharp-advance/StaticInAbstractClass/StaticInAbstractClass.csproj",
+        "packagesPath": "/Users/kiransarode/.nuget/packages/",
+        "outputPath": "/Users/kiransarode/Projects/csharp-advance/StaticInAbstractClass/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/ksarode/.nuget/NuGet/NuGet.Config"
+          "/Users/kiransarode/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -58,7 +58,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.413/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.404/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
