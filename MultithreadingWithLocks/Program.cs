@@ -2,11 +2,12 @@
 using System.Threading;
 
 /*
-In .NET / C#, lock and Interlocked are both used for thread synchronization, but they solve different kinds of problems.
+In .NET / C#, locking mechanism are both used for thread synchronization, but they solve different kinds of problems.
 
 Think of it like this:
 
-lock → protects a block of code1
+lock → lock is the simplest and most common mechanism for protecting shared resources.
+Internally it uses Monitor.
 
 Interlocked → performs atomic operations on variables
 */
