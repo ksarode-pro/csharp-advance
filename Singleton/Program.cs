@@ -42,6 +42,7 @@ namespace Singleton
     public sealed class OldSingletonService
     {
         private static OldSingletonService? _oldSingletonService;
+        //Always keep locking object private so that external code cannot access it
         private static object _lockObject = new object();
         public static OldSingletonService Instance
         {
