@@ -1,4 +1,4 @@
-﻿
+
 using System.Threading.Tasks;
 
 namespace LambdaDemo
@@ -13,7 +13,8 @@ namespace LambdaDemo
 
             Action<string> hello = (x) => System.Console.WriteLine(x);
             hello("Kiran");
-
+            
+            Predicate<int> isEven = (x) => x % 2 == 0;
             //passing lambda to higher order functions
             var numbers = new List<int> { 1, 2, 3, 4, 5 };
             ProcessList(numbers, n => n % 2 == 0);
