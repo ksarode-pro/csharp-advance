@@ -15,6 +15,8 @@ namespace LambdaDemo
             hello("Kiran");
             
             Predicate<int> isEven = (x) => x % 2 == 0;
+            isEven(4);
+
             //passing lambda to higher order functions
             var numbers = new List<int> { 1, 2, 3, 4, 5 };
             ProcessList(numbers, n => n % 2 == 0);
