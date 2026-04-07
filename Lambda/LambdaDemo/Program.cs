@@ -8,13 +8,16 @@ namespace LambdaDemo
     {
         public static async Task Main(string[] args)
         {
-            //normal lambdas using delegates
+            //normal lambdas using inbuilt delegates
+            // returns value
             Func<int, int, int> add = (x, y) => x + y;
             System.Console.WriteLine(add(5, 5));
 
+            // does not return any type
             Action<string> hello = (x) => System.Console.WriteLine(x);
             hello("Kiran");
             
+            // returns only true and false
             Predicate<int> isEven = (x) => x % 2 == 0;
             isEven(4);
 
