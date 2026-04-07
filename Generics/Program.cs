@@ -1,9 +1,10 @@
-﻿using System;
+using System;
 using System.Collections.Concurrent;
 namespace Generics
 {
     class Program
     {
+        // generic cache deno using generics
         public static void Main(string[] args)
         {
             GenericCacheManager<Book> bookCache = new GenericCacheManager<Book>();
