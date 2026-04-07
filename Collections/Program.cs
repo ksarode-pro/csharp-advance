@@ -1,4 +1,5 @@
 // See https://aka.ms/new-console-template for more information
+// collection demostraion
 using System.Collections;
 namespace Collections;
 
@@ -7,8 +8,8 @@ class Program
     static void Main(string[] args)
     {
         //uncomment one bh one to teat each collection
-        ArrayListDemo al = new ArrayListDemo();
-        al.Demo();
+        //ArrayListDemo al = new ArrayListDemo();
+        //al.Demo();
 
         // HashtableDemo ht = new HashtableDemo();
         // ht.Demo();
@@ -36,8 +37,8 @@ class Program
         bc.Demo();
         */
 
-        // HashSetDemo hs = new HashSetDemo();
-        // hs.Demo();
+         HashSetDemo hs = new HashSetDemo();
+         hs.Demo();
 
         // LinkedListDemo l = new LinkedListDemo();
         // l.Demo();
