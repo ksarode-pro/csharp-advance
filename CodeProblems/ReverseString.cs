@@ -24,12 +24,17 @@ namespace CodeProblems
 
         internal string ReverseStringRecurssive(string s)
         {
-            if (s.Length <= 1)
+            int inputLenght = s.Length;
+            //base part - ends recursion
+            if(inputLenght == 1)
             {
+                System.Console.WriteLine(s);
                 return s;
             }
-            
-            return s[s.Length - 1] + ReverseStringRecurssive(s.Substring(0, s.Length - 1));
+
+            //recursive part - keep calling function
+            System.Console.WriteLine(s[inputLenght - 1] + " + ReverseStringRecurssive(\"" + s.Substring(0, inputLenght - 1) + "\")");
+            return s[inputLenght - 1] + ReverseStringRecurssive(s.Substring(0, inputLenght - 1));
         }       
     }
 }

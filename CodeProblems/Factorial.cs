@@ -15,10 +15,17 @@ namespace CodeProblems
 
         internal int FactorialRecurssive(int n)
         {
+            //recursive part - keep calling function
             if(n > 1)
+            {
                 return n * FactorialRecurssive(n - 1);            
+            }
             else
+            {
+                //base part - ends recursion
                 return 1;
+            }
+                
         }       
     }
 }
