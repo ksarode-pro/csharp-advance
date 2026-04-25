@@ -40,3 +40,7 @@ Static/obj/
 
 Singleton/bin
 Singleton/obj
+
+ReadOnlyConst/obj
+ReadOnlyConst/bin
+
