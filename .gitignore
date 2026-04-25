@@ -44,3 +44,6 @@ Singleton/obj
 ReadOnlyConst/obj
 ReadOnlyConst/bin
 
+*/obj
+*/bin
+*/.DS_Store
