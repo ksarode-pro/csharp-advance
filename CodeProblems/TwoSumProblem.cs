@@ -7,7 +7,7 @@
 
 public static class TwoSumProblem
 {
-    static internal (int a, int b) Findlements(int[] a, int target)
+    static internal (int a, int b) FindElements(int[] a, int target)
     {
         int sum;
         for(int i = 0; i < a.Length; i++)
@@ -27,7 +27,7 @@ public static class TwoSumProblem
         return (-1,-1);
     }
 
-    static internal (int a, int b) Findlements2(int[] a, int target)
+    static internal (int a, int b) FindElements2(int[] a, int target)
     {
         int requiredNumber;
         int requiredNumberIndex;
@@ -39,6 +39,26 @@ public static class TwoSumProblem
             {
                 return (i, requiredNumberIndex);
             }
+        }
+        return (-1,-1);
+    }
+
+    static internal (int a, int b) FindElements3(int[] a, int target)
+    {
+        int requiredNumber;
+        //Key = Element; Value = index; 
+        Dictionary<int, int> dicArray = new Dictionary<int, int>();
+
+        for(int i = 0; i < a.Length; i++)
+        {            
+            requiredNumber = target - a[i];
+            
+            if(dicArray.ContainsKey(requiredNumber))
+                return(dicArray[requiredNumber], i);
+            
+            //add after checking requiredNumber
+            if(!dicArray.ContainsKey(a[i]))
+                dicArray.Add(a[i], i);
         }
         return (-1,-1);
     }
