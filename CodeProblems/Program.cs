@@ -11,3 +11,8 @@ reverse.ReverseStringWithoutInBluildFunctions("Kiran");
 reverse.ReverseStringWithStringBuilder("Kiran");
 reverse.ReverseStringWithTwoWayPointers("Kiran");
 Console.WriteLine($"Reverse of Kiran is " + reverse.ReverseStringRecurssive("Kiran"));
+
+//RemoveDuplicateFromArray.RemoveDuplicate([1,2,3,4, 3, 1, 2]);
+//RemoveDuplicateFromArray.RemoveDuplicateWithCollection([1,2,3,4, 3, 1, 2]);
+//RemoveDuplicateFromArray.RemoveDuplicateWithoutInbuildFunctions([1,2,3,4, 3, 1, 2]);
+RemoveDuplicateFromArray.RemoveDuplicateOptimizedWithoutInbuilt([1,2,3,4, 3, 1, 2]);
