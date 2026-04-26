@@ -73,7 +73,7 @@ namespace CodeProblems
 
             for (int i = 0; i < uniqueCount; i++)
             {
-                Console.Write(uniqueArr[i] + " ");
+                Console.WriteLine(uniqueArr[i]);
             }
         }
 

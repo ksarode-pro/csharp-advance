@@ -16,3 +16,6 @@ Console.WriteLine($"Reverse of Kiran is " + reverse.ReverseStringRecurssive("Kir
 //RemoveDuplicateFromArray.RemoveDuplicateWithCollection([1,2,3,4, 3, 1, 2]);
 //RemoveDuplicateFromArray.RemoveDuplicateWithoutInbuildFunctions([1,2,3,4, 3, 1, 2]);
 RemoveDuplicateFromArray.RemoveDuplicateOptimizedWithoutInbuilt([1,2,3,4, 3, 1, 2]);
+
+Console.WriteLine(TwoSumProblem.Findlements([17, 1, 55, 5, 10, 12, 6], 17));
+Console.WriteLine(TwoSumProblem.Findlements2([17, 1, 55, 5, 10, 12, 6], 17));
