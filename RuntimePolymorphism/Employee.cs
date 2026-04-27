@@ -1,4 +1,4 @@
-namespace MethosOverridingAndHiding
+namespace RuntimePolymorphism
 {
     class BaseClass
     {

@@ -1,5 +1,5 @@
 ﻿// See https://aka.ms/new-console-template for more information
-using MethosOverridingAndHiding;
+using RuntimePolymorphism;
 
 DerivedClass o = new DerivedClass();
 o.PrintFullName();
