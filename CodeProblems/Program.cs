@@ -25,3 +25,8 @@ Console.WriteLine(TwoSumProblem.FindElements3([17, 1, 55, 5, 10, 12, 6], 17));
 int num = -1;
 string result = PrimeNumber.IsPrime(num) ? "Prime" : "Not Prime";
 System.Console.WriteLine($"{num} is { result }");
+
+FindDuplicateInArray.FindDuplicateUsingDictionary([1,1,2,3,4,5,2,12,56,2, 34, 78, 21, 21]);
+FindDuplicateInArray.FindDuplicateUsingHashSet([1,1,2,3,4,5,2,12,56,2, 34, 78, 21, 21]);
+FindDuplicateInArray.FindDuplicateUsingLinq([1,1,2,3,4,5,2,12,56,2, 34, 78, 21, 21]);
+FindDuplicateInArray.FindDuplicateUsingNoInBluitFunc([1,1,2,3,4,5,2,12,56,2, 34, 78, 21, 21]);
