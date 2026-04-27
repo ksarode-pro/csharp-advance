@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Runtime.CompilerServices;
 using CodeProblems;
 
 Factorial factorial = new Factorial();
@@ -20,3 +21,7 @@ RemoveDuplicateFromArray.RemoveDuplicateOptimizedWithoutInbuilt([1,2,3,4, 3, 1, 
 Console.WriteLine(TwoSumProblem.FindElements([17, 1, 55, 5, 10, 12, 6], 17));
 Console.WriteLine(TwoSumProblem.FindElements2([17, 1, 55, 5, 10, 12, 6], 17));
 Console.WriteLine(TwoSumProblem.FindElements3([17, 1, 55, 5, 10, 12, 6], 17));
+
+int num = -1;
+string result = PrimeNumber.IsPrime(num) ? "Prime" : "Not Prime";
+System.Console.WriteLine($"{num} is { result }");
