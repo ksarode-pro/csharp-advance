@@ -10,7 +10,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NestedClass", "NestedClass\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultithreadingWithLocks", "MultithreadingWithLocks\MultithreadingWithLocks.csproj", "{723939C1-6611-46A9-8BE2-7549BC0957E7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MethodOverridingAndHiding", "MethodOverridingAndHiding\MethodOverridingAndHiding.csproj", "{511E034F-BBCD-4122-BF60-96C234690B5E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RuntimePolymorphism", "RuntimePolymorphism\RuntimePolymorphism.csproj", "{511E034F-BBCD-4122-BF60-96C234690B5E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenericRepository", "GenericRepository\GenericRepository.csproj", "{CB9F8856-A23E-4808-B56C-E923578B1CFC}"
 EndProject
@@ -22,7 +22,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Delegates", "Delegates\Dele
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Collections", "Collections\Collections.csproj", "{4DE403BC-85FA-4B53-87F3-D27A973B6540}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OopsDemo", "OopsDemo\OopsDemo.csproj", "{B495384A-6925-408D-90E7-CCFCC798C6DE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Oops", "OopsDemo\Oops.csproj", "{B495384A-6925-408D-90E7-CCFCC798C6DE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Constructors", "Constructors\Constructors.csproj", "{412E07A2-D56D-429C-9FFD-7ECA35A36C2A}"
 EndProject

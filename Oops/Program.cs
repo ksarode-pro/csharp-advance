@@ -3,8 +3,8 @@
 using System;
 using System.Runtime.CompilerServices;
 using System.Reflection;
-using OopsDemo;
-using OopsDemo2;
+using Oops;
+using Oops2;
 
 
 /*
@@ -22,7 +22,7 @@ List of Access Modifiers in C# and scope:
 
 //Only public and internal are allowed for top-level types (like class, interface at namespace level).
 //Default is internal if no modifier is specified.
-namespace OopsDemo
+namespace Oops
 {
     //Only public and internal are allowed for top-level types (like class, interface at namespace level).
     //Default is internal if no modifier is specified.
@@ -141,7 +141,7 @@ namespace OopsDemo
 }
 
 
-namespace OopsDemo2
+namespace Oops2
 {
     class AnotherAssemblyClass : Base
     {
